@@ -17,25 +17,19 @@ body {
 }
 
 .card-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: no-wrap;
-  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .card {
-  width: 40%;
-  margin: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
+  align-items: center;
+  flex-wrap: no-wrap;
+  background-color: #f1f1f1;
+  padding: 20px;
 }
 
 .card:hover {
@@ -64,4 +58,10 @@ body {
   font-weight: lighter;
   color: gray;
   font-family: 'Europa', sans-serif;
+}
+
+.card:not(:first-child) {
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+  padding-top: 30px;
 }
