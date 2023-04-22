@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/a0e112ddd2.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .skills {
+        background-color: #ff4a57;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 0;
+      }
+
+      .skills-title {
+        display: none;
+      }
+
+      .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: no-wrap;
+        max-width: 800px;
+      }
+
+      .card {
+        width: 40%;
+        margin: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+      }
+
+      .card:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .card img {
+        width: 40%;
+        margin-bottom: 10px;
+      }
+
+      .card h2 {
+        margin-top: 0;
+        font-size: 28px;
+      }
+
+      .card p {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="skills">
+      <div class="card-container">
+        <div class="card">
+          <i
+            class="fa-light fa-paintbrush-pencil"
+            style="color: #ff4a57; font-size: 28px"
+          ></i>
+          <p>
+            HTML (Hypertext Markup Language) is a markup language used to create
+            the structure and content of web pages. It uses various tags and
+            elements to define the different parts of a web page such as
+            headings, paragraphs, images, links, and more.
+          </p>
+        </div>
+        <div class="card">
+          <p>
+            CSS (Cascading Style Sheets) is a stylesheet language used to
+            describe the presentation of HTML documents. It allows web
+            developers to style the layout, typography, colors, and other visual
+            aspects of a web page, separate from the HTML content.
+          </p>
+        </div>
+        <div class="card">
+          <p>
+            JavaScript is a programming language used to create interactive and
+            dynamic web content. It can be used to add interactivity to web
+            pages, create animations, validate forms, and more.interactivity to
+            web pages, create animations.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
